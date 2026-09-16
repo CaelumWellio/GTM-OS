@@ -1,0 +1,15 @@
+# secrets and env
+*.env
+.hubspot_prod_env
+.env*
+
+# data never lives here
+*.jsonl
+outputs/
+*.csv.bak
+
+# OS and editor
+.DS_Store
+.vscode/
+*.swp
+.superpowers/
