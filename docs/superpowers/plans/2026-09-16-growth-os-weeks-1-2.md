@@ -1470,7 +1470,7 @@ def test_render_has_source_lines_and_limits():
                   {"mode": "cycle zero (retrospective)", "source_line": "Source: test"})
     assert "## What separates winners from losers" in md and "Source:" in md
     assert "thin" in md and "no time to prep" in md and "cycle zero" in md
-    assert "—" not in md
+    assert "\u2014" not in md
 
 
 def test_check_citations_flags_sections_without_source(tmp_path):
@@ -1618,7 +1618,7 @@ def render(summary: dict, quotes_by_tag: Dict[str, List[dict]], meta: dict) -> s
               "", meta["source_line"], ""]
     if summary.get("other_sample"):
         lines += ["## Other, unsorted (read before the next codebook)", ""] + [f"- {o}" for o in summary["other_sample"][:25]] + ["", meta["source_line"], ""]
-    return "\n".join(lines).replace("—", "-")
+    return "\n".join(lines).replace("\u2014", "-")
 
 
 def main(argv: Optional[List[str]] = None) -> int:
@@ -2385,7 +2385,7 @@ def render_digest(week: str, closed_recs: List[dict], tagged_rows: List[dict], m
     L += ["", "## Needs Caelum", ""]
     L += [f"- {e['deal_id']}: {e['reason']}" for e in errors] or ["- nothing"]
     L += ["", "Source: outputs/customer_truth/summary.json (this run) against summary.prev.json", ""]
-    return "\n".join(L).replace("—", "-")
+    return "\n".join(L).replace("\u2014", "-")
 
 
 def main(argv: Optional[List[str]] = None) -> int:
