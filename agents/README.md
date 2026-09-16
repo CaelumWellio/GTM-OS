@@ -4,4 +4,4 @@ Every agent has a spec in `_spec-template.md` format before it runs. Status tabl
 
 | Agent | Implementation | Status | Since |
 |---|---|---|---|
-| weekly-pull-and-tag | scripts/growth_os/run_weekly.sh | specced | 2026-09-16 |
+| weekly-pull-and-tag | scripts/growth_os/run_weekly.sh | dry-run | 2026-09-17 |

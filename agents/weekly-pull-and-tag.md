@@ -1,6 +1,6 @@
 # weekly-pull-and-tag
 
-Status: specced. Since: 2026-09-16.
+Status: dry-run. Since: 2026-09-17.
 
 1. **Job in one sentence.** Every Sunday night, pull what changed in HubSpot in the last eight days, tag the early conversation text of any AU new-business deal that closed, recompute the hook summary, and write a digest to branch `auto/weekly`.
 2. **Data source.** HubSpot production 20058914, read-only via `HUBSPOT_PROD_TOKEN`: deals in pipeline 41942802 with `hs_lastmodifieddate` in window; meetings, calls, notes, emails with `hs_lastmodifieddate` in window plus their company and deal associations; email bodies via `/crm/v3/objects/emails/batch/read`. Existing caches under `~/Documents/GTM Project/outputs/sdr_funnel/` and `outputs/sdr_history/`.
