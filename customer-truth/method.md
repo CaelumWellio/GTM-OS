@@ -32,6 +32,7 @@ Events of type email, meeting, note, call with a non-empty body and not an auto-
 - Rebuild from raw quarterly. Weekly runs append; they do not rewrite the truth file.
 - Quotes are scrubbed per deal, using that deal's own school names, staff names and email addresses. The automated check verifies full names and email addresses across the founder-facing files, but deliberately does not scan for single first names, because surnames collide with ordinary words. A name belonging to someone who is not a contact on that deal would not be caught mechanically and is a read-before-publish item.
 - A distinctive third-party program name identifies a school as surely as its own name does, once sector and state are printed beside the quote. No scrub catches it, so it is a read-before-publish item; once spotted, the offending substring goes into `customer-truth/quote-blocklist.txt` and every quote containing it is dropped at render time.
+- Response speed (`scripts/growth_os/response_speed.py`) is measured from the same cached company timelines and the same early window as the hook pass, not from a fresh pull: first reply, reply ratio and outbound volume are all counted between `window_start` and `window_end` on `outputs/sdr_history/<company_id>.json`.
 
 ## Known limits
 - Cycle zero's stored quotes were produced under the old scrub order, which truncated to 200 characters before scrubbing. A name straddling that boundary could in principle leave an unscrubbed head in data tagged before 2026-09-17. The order is now scrub first, truncate second; re-tagging would clear any fragment that remains.
@@ -41,3 +42,4 @@ Meeting outcomes unrecorded (70 percent of past discovery meetings still SCHEDUL
 ## Run log
 
 - 2026-09-17: cycle one (retrospective, full cache); population {'deals': 842, 'won': 365, 'lost': 477, 'with_text': 840, 'tagged': 842, 'errors': 0, 'closed_total': 844, 'excluded_no_text': 2, 'excluded_no_text_won': 1, 'excluded_error': 0, 'excluded_untagged': 0}; base rate 0.4335; codebook 1.0; portal 20058914.
+- 2026-09-18: response-speed pass on the cycle-one population; population {'deals': 842, 'won': 365, 'lost': 477, 'replied': 675, 'no_reply': 167}; base rate 0.4335; buckets 0-3 46.9% n=559, 4-14 31.3% n=67, 15+ 16.3% n=49, none 44.3% n=167; no-reply anomaly resolved by campaign (83/167 in Free Preview/Contact Sales, conference or diocese/feeder-school campaigns winning 51.8%, the other 84 winning 36.9%), not by source or dealtype.
