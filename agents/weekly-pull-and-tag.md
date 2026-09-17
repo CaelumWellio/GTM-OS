@@ -1,6 +1,6 @@
 # weekly-pull-and-tag
 
-Status: dry-run. Since: 2026-09-17.
+Status: running. Since: 2026-09-17.
 
 1. **Job in one sentence.** Every Sunday night, pull what changed in HubSpot in the last eight days, tag the early conversation text of any AU new-business deal that closed, recompute the hook summary, and write a digest to branch `auto/weekly`.
 2. **Data source.** HubSpot production 20058914, read-only via `HUBSPOT_PROD_TOKEN`: deals in pipeline 41942802 with `hs_lastmodifieddate` in window; meetings, calls, notes, emails with `hs_lastmodifieddate` in window plus their company and deal associations; email bodies via `/crm/v3/objects/emails/batch/read`. Existing caches under `~/Documents/GTM Project/outputs/sdr_funnel/` and `outputs/sdr_history/`.
@@ -12,4 +12,5 @@ Status: dry-run. Since: 2026-09-17.
 8. **What breaks it.** Token expired or scope missing (check: portal assertion fails, job exits non-zero, log line). Mac asleep (check: digest file missing Monday; fallback is the manual command). Claude JSON parse failure (check: `error` field on the tagged row; digest lists it). Company with no timeline file (check: digest lists "no text"). Deal closed but `closedate` outside window (check: digest counts deals by close week).
 
 Implementation: `scripts/growth_os/pull_delta.py`, `weekly_digest.py`, `run_weekly.sh`, launchd plist.
-Corrections log: none yet.
+Corrections log:
+- 2026-09-17: first full run. Blocked earlier the same day on a missing sales-email-read scope; the scope was granted and the run completed. 26 closed deals tagged, zero errors, digest on auto/weekly.
