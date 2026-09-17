@@ -8,4 +8,6 @@ What schools said, in their words, when they bought and when they did not.
 - `weekly/`: automated digests, one per ISO week, written to branch `auto/weekly`.
 - `quotes/`: curated, de-identified quotes by hook.
 
-Status: not yet run.
+Status: cycle zero ran 17 September 2026 over 803 closed AU new-business deals, 704 of them in scope. The result is in `what-the-market-is-telling-us.md`: no hook clears the promotion bar once conversation volume is controlled. Weekly digests have not started, because the weekly job is blocked on a HubSpot scope.
+
+Source: `customer-truth/method.md` run log; `~/Documents/GTM Project/outputs/customer_truth/summary.json`.
