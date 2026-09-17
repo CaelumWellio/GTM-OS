@@ -4,7 +4,7 @@ Growth OS is Wellio's marketing memory: one repo holding what the market has sai
 
 ## What has run
 
-Cycle zero ran on 2026-09-17 against 803 closed AU new-business deals from the Sales Pipeline AU, tagged by a language model against hook codebook 1.0, with zero tagging errors. 704 of those deals are in scope; the in-scope base win rate is 38% (271 won, 433 lost). The other 99 are excluded because their company has no file in the SDR-history cache, and deals outside that cache win far more often than deals inside it, so the cache is not a random sample and the finding below cannot be generalised to the excluded deals.
+Cycle zero processed 803 closed AU new-business deals from the Sales Pipeline AU on 2026-09-17. 704 of them had early conversation text and were tagged by a language model against hook codebook 1.0, with zero tagging errors; the other 99 had none, so the model was never called on them. Those 704 are the in-scope population; the in-scope base win rate is 38% (271 won, 433 lost). The 99 are excluded because their company has no file in the SDR-history cache, and deals outside that cache win far more often than deals inside it, so the cache is not a random sample and the finding below cannot be generalised to the excluded deals.
 
 The weekly pull-and-tag job is installed and scheduled for Sunday 21:00. Its first real run, on 2026-09-17, pulled 503 deals, 565 meetings, 1,101 calls and 167 notes, then exited without producing a digest: the HubSpot private app does not hold the emails read scope, and the pull fails on that object.
 
@@ -12,7 +12,7 @@ Source: customer-truth/what-the-market-is-telling-us.md; agents/weekly-pull-and-
 
 ## The one finding
 
-No hook in the cycle-zero data clears the promotion bar, at least 20 mentions and a volume-adjusted difference of at least 10 points across at least two volume strata. Once conversation volume is controlled for, no wording separates the deals that won from the deals that lost. The strongest signal is structural rather than verbal: deals that won closed in a median 29 days, against 73 days for deals that lost, and win rate falls as the logged conversation grows (43%, 43%, 36%, 32% by early-text quartile). One tag is well powered and moves against winning: time_saved shows a volume-adjusted difference of -12.3 points on 95 deals; it is reported here as a negative signal rather than promoted, because the promotion rule only ever promotes a hook, it does not flag a warning.
+No hook in the cycle-zero data clears the promotion bar, at least 20 mentions and a volume-adjusted difference of at least 10 points across at least two volume strata. Once conversation volume is controlled for, no wording separates the deals that won from the deals that lost. The strongest signal is structural rather than verbal: deals that won closed in a median 29 days, against 73 days for deals that lost, and win rate falls as the logged conversation grows (43%, 43%, 36%, 32% by early-text quartile). One tag shows a nominal association against winning: time_saved has a volume-adjusted difference of -12.3 points on 95 deals. The promotion rule only ever promotes a hook, it does not flag a warning, so this is reported rather than promoted; and with 18 tags tested it does not survive multiple-comparison correction, so it is a lead to check, not a finding.
 
 Source: customer-truth/what-the-market-is-telling-us.md
 

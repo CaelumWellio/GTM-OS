@@ -2,6 +2,8 @@
 
 Format: date, decision, alternatives considered, why, who decided, what would reverse it. One file per decision, named `YYYY-MM-DD-slug.md`.
 
+The reversal condition in `2026-09-16-first-machine.md` was met on 2026-09-17; the decision that followed is in `2026-09-17-first-machine-reversal-condition-met.md`.
+
 ## Pending questions (from the 2026-09-15 brainstorm)
 
 - Does primary attach travel with the role as ABM? Caelum.

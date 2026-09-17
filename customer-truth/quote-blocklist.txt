@@ -1,0 +1,14 @@
+# Quote blocklist for the customer-truth pass.
+#
+# One substring per line. A candidate quote containing any of them, matched case-insensitively,
+# is dropped before quote selection in scripts/growth_os/write_truth.py. Blank lines and lines
+# starting with '#' are ignored; a missing file means no blocklist.
+#
+# This catches what the name scrubs cannot. The scrubs remove school names, staff names and email
+# addresses. They do not remove a distinctive third-party program name, which identifies a school
+# just as surely once the sector and state are printed beside the quote.
+#
+# Add a line here whenever a read-before-publish pass finds a quote that narrows the school by
+# some other means.
+
+Brainwise

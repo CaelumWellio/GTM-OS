@@ -7,7 +7,7 @@ One page for a founder.
 The Five Engines strategy: the September 2026 GTM strategy artifact, both critique rounds merged.
 The Sales Signals pilot and SDR outreach skill: 20 schools gated on prospect status, first email per school written from a pinned note, human-sent.
 The primary attach spine and scraping pipeline: 202 K-12 schools, 201 scraped, a junior-school point of contact named at 99.
-The customer-truth machine, now that it has run: cycle zero, 2026-09-17, tagged 803 closed AU deals against hook codebook 1.0, zero tagging errors.
+The customer-truth machine, now that it has run: cycle zero, 2026-09-17, processed 803 closed AU deals; 704 of them had early conversation text and were tagged against hook codebook 1.0 with zero tagging errors, and 99 had none.
 
 Source: ~/Documents/GTM Project/docs/gtm-strategy-2026-09/10-third-critique-response.md; ~/Documents/GTM Project/docs/revops/2026-09-05-sdr-outreach-pilot-assessment.md; ~/Documents/GTM Project/outputs/primary_attach_2026-09-05/; customer-truth/what-the-market-is-telling-us.md
 
