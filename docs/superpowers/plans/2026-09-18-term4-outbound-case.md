@@ -152,7 +152,7 @@ def test_render_has_source_line_in_every_section():
     assert len(parts) > 1
     for p in parts[1:]:
         assert "Source:" in p
-    assert "—" not in md
+    assert "\u2014" not in md
 ```
 
 - [ ] **Step 2: Run the tests to verify they fail**
@@ -341,7 +341,7 @@ def render(summary: dict) -> str:
           "- Auto-replies are excluded, and the early window ends when the deal first reached Evaluating.",
           "- This is an association measured on closed deals, not a controlled test.",
           "", SRC, ""]
-    return "\n".join(L).replace("—", "-")
+    return "\n".join(L).replace("\u2014", "-")
 
 
 def main(argv: Optional[List[str]] = None) -> int:
@@ -517,7 +517,7 @@ def test_render_has_source_line_in_every_section_and_no_owner_ids():
     for p in re.split(r"^## ", md, flags=re.M)[1:]:
         assert "Source:" in p
     assert "hubspot_owner_id" not in md
-    assert "—" not in md
+    assert "\u2014" not in md
 ```
 
 - [ ] **Step 2: Run the tests to verify they fail**
@@ -721,7 +721,7 @@ def render(summary: dict) -> str:
           "- Replies by phone or in person are invisible here.",
           "- The windows above are choices, not facts; a different window would move the numbers.",
           "", SRC, ""]
-    return "\n".join(L).replace("—", "-")
+    return "\n".join(L).replace("\u2014", "-")
 
 
 def fetch_names() -> Dict[str, str]:
@@ -823,13 +823,13 @@ Build the chain from the inventory and the funnel baseline. The form is: schools
 
 - [ ] **Step 3: Write the document, in exactly this order**
 
-1. `## The number` — the commitment in qualified meetings booked over the 90 days to mid-December, with the baseline it is measured against, in the first two lines.
-2. `## Why this window` — Term 4, using the recorded figure that 204 of 284 wins in 2025 (70 percent) landed on or after 4 September, worth $1,654,495 of the $2,348,300 full year.
-3. `## The three moves` — each with what it is, the evidence that motivates it, what it is worth at current conversion, who does it, and when.
-4. `## What I need` — access, approvals, and one decision, addressed to roles not people.
-5. `## What I will stop doing` — the renewals book hand-over, stated concretely.
-6. `## How you will know, weekly` — the measurement, its source, and the fact that it is already automated.
-7. `## What this plan does not claim` — no hook has been proven, attribution does not exist yet, and the analysis is retrospective because running anything live before the decision was not permitted.
+1. `## The number`. the commitment in qualified meetings booked over the 90 days to mid-December, with the baseline it is measured against, in the first two lines.
+2. `## Why this window`. Term 4, using the recorded figure that 204 of 284 wins in 2025 (70 percent) landed on or after 4 September, worth $1,654,495 of the $2,348,300 full year.
+3. `## The three moves`. each with what it is, the evidence that motivates it, what it is worth at current conversion, who does it, and when.
+4. `## What I need`. access, approvals, and one decision, addressed to roles not people.
+5. `## What I will stop doing`. the renewals book hand-over, stated concretely.
+6. `## How you will know, weekly`. the measurement, its source, and the fact that it is already automated.
+7. `## What this plan does not claim`. no hook has been proven, attribution does not exist yet, and the analysis is retrospective because running anything live before the decision was not permitted.
 
 Each section ends with a `Source:` line. Roughly 900 words total. No statistical vocabulary anywhere: no strata, no quartile, no multiple-comparison correction, no volume-adjusted. Where a statistical idea is load-bearing, say it plainly, for example "we compared like with like by grouping deals by how much conversation was logged".
 
@@ -837,7 +837,7 @@ Each section ends with a `Source:` line. Roughly 900 words total. No statistical
 
 ```bash
 cd "/Users/cleonard1998/Documents/GTM Project" && python3 -m scripts.growth_os.checks
-cd ~/Documents/growth-os && grep -c $'—' outbound-engine/term-4-plan.md
+cd ~/Documents/growth-os && grep -c $'\u2014' outbound-engine/term-4-plan.md
 git add -A && git commit -m "outbound-engine: the 90-day Term 4 plan, with the number derived from the repo
 
 Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>" && git push
