@@ -1,17 +1,18 @@
 # What the market is telling us
 
-Generated 2026-09-17T07:20:23 UTC. Mode: cycle zero (retrospective). Codebook 1.0. Minimum sample 20.
+Generated 2026-09-17T11:43:04 UTC. Mode: cycle one (retrospective, full cache). Codebook 1.0. Minimum sample 20.
 
 ## The answer in one paragraph
 
-Across 704 in-scope closed deals (271 won, 433 lost, base win rate 38%), no hook clears the bar of at least 20 mentions and a +10 point volume-adjusted difference. The strongest signal in the data is structural rather than verbal: won deals close in a median 29 days against 73 days for lost deals.
-One tag shows a nominal association against winning: **time_saved** has a volume-adjusted lift of -12.3 pts (n=95). The promotion rule above is one-sided by design (built to promote a hook, not to flag a warning), so this signal is reported here rather than promoted. With 18 tags tested it does not survive multiple-comparison correction, so it is reported as a lead to check, not a finding.
+Across 842 in-scope closed deals (365 won, 477 lost, base win rate 43%), no hook clears the bar of at least 20 mentions and a +10 point volume-adjusted difference. The strongest signal in the data is structural rather than verbal: won deals close in a median 27 days against 73 days for lost deals.
+One tag shows a nominal association against winning: **time_saved** has a volume-adjusted lift of -13.0 pts (n=108). The promotion rule above is one-sided by design (built to promote a hook, not to flag a warning), so this signal is reported here rather than promoted. With 18 tags tested it does not survive multiple-comparison correction, so it is reported as a lead to check, not a finding.
+The closest thing in the data to a positive signal is **social_media_ban**, with a volume-adjusted lift of 20.4 pts on 19 present deals. It is not promoted because that is below the minimum sample of 20, not because the signal itself is weak.
 
 Source: ~/Documents/GTM Project/outputs/customer_truth/summary.json (stage 3), deals_tagged.jsonl (stage 2), deals_early_text.jsonl (stage 1); method in customer-truth/method.md
 
 ## Coverage and what is excluded
 
-Of 803 closed deals, 704 are in scope for the rates below. 99 deals (80 of them won) are excluded because their company has no timeline file in the SDR-history cache, which was built for the SDR prospect list and does not cover every closed-deal company; that is missing data, not evidence, and this finding cannot be generalised to them.
+Of 844 closed deals, 842 are in scope for the rates below. 2 deals (1 of them won) are excluded because their company has no timeline file in the SDR-history cache, which was built for the SDR prospect list and does not cover every closed-deal company; that is missing data, not evidence, and this finding cannot be generalised to them.
 
 Source: ~/Documents/GTM Project/outputs/customer_truth/summary.json (stage 3), deals_tagged.jsonl (stage 2), deals_early_text.jsonl (stage 1); method in customer-truth/method.md
 
@@ -19,24 +20,24 @@ Source: ~/Documents/GTM Project/outputs/customer_truth/summary.json (stage 3), d
 
 | Tag | Present n | Win rate present | Win rate absent | Raw lift | Adjusted lift | Strata | Share won % | Share lost % | Note |
 |---|---|---|---|---|---|---|---|---|---|
-| compliance_requirement | 38 | 42% | 38% | 3.8 | 4.6 | 4 | 1.78 | 1.37 |  |
-| staff_wellbeing_retention | 68 | 41% | 38% | 3.0 | 2.8 | 4 | 3.12 | 2.5 |  |
-| pilot_trial_request | 260 | 39% | 38% | 0.6 | 1.0 | 4 | 11.26 | 9.92 |  |
-| price_budget | 257 | 39% | 38% | 0.0 | 0.3 | 4 | 11.04 | 9.86 |  |
-| curriculum_mapped | 173 | 38% | 39% | -1.2 | -1.7 | 4 | 7.25 | 6.74 |  |
-| trackable_outcomes | 206 | 36% | 40% | -3.6 | -3.9 | 4 | 8.25 | 8.23 |  |
-| evidence_based | 56 | 34% | 39% | -5.0 | -3.9 | 4 | 2.12 | 2.31 |  |
-| timing_term | 281 | 35% | 41% | -5.4 | -4.4 | 4 | 11.04 | 11.35 |  |
-| competitor_named | 147 | 35% | 39% | -3.9 | -4.5 | 4 | 5.8 | 5.93 |  |
-| standardised_program | 289 | 36% | 40% | -4.2 | -4.6 | 4 | 11.59 | 11.54 |  |
-| no_prep | 203 | 34% | 40% | -5.6 | -5.7 | 4 | 7.8 | 8.3 |  |
-| oversight_visibility | 152 | 34% | 40% | -5.5 | -6.0 | 4 | 5.8 | 6.24 |  |
-| attendance_behaviour | 52 | 33% | 39% | -6.3 | -6.4 | 4 | 1.9 | 2.18 |  |
-| student_engagement | 178 | 31% | 41% | -9.4 | -8.9 | 4 | 6.24 | 7.61 |  |
-| time_saved | 95 | 28% | 40% | -11.6 | -12.3 | 4 | 3.01 | 4.24 |  |
-| board_reporting | 15 | 33% | 39% | -5.3 | n/a | 1 | 0.56 | 0.62 | thin, single stratum |
-| social_media_ban | 16 | 62% | 38% | 24.6 | n/a | 1 | 1.11 | 0.37 | thin, single stratum |
-| parent_community | 14 | 21% | 39% | -17.4 | n/a | 1 | 0.33 | 0.69 | thin, single stratum |
+| social_media_ban | 19 | 68% | 43% | 25.7 | 20.4 | 2 | 1.11 | 0.35 | thin |
+| pilot_trial_request | 304 | 44% | 43% | 1.7 | 2.4 | 4 | 11.54 | 9.76 |  |
+| compliance_requirement | 43 | 44% | 43% | 0.9 | 1.6 | 4 | 1.62 | 1.39 |  |
+| price_budget | 301 | 43% | 44% | -1.3 | -0.7 | 4 | 10.94 | 9.99 |  |
+| staff_wellbeing_retention | 76 | 42% | 43% | -1.4 | -1.7 | 4 | 2.74 | 2.54 |  |
+| trackable_outcomes | 244 | 41% | 44% | -2.8 | -2.8 | 4 | 8.63 | 8.26 |  |
+| attendance_behaviour | 62 | 40% | 44% | -3.3 | -3.3 | 4 | 2.14 | 2.14 |  |
+| evidence_based | 66 | 39% | 44% | -4.3 | -3.8 | 4 | 2.22 | 2.31 |  |
+| curriculum_mapped | 204 | 40% | 44% | -4.2 | -4.6 | 4 | 7.01 | 7.05 |  |
+| no_prep | 239 | 40% | 45% | -5.0 | -4.8 | 4 | 8.12 | 8.32 |  |
+| standardised_program | 338 | 41% | 45% | -4.7 | -4.9 | 4 | 11.71 | 11.61 |  |
+| competitor_named | 171 | 39% | 44% | -5.2 | -5.4 | 4 | 5.73 | 6.01 |  |
+| timing_term | 313 | 39% | 46% | -6.5 | -5.4 | 4 | 10.51 | 10.98 |  |
+| student_engagement | 204 | 37% | 45% | -8.1 | -7.4 | 4 | 6.5 | 7.39 |  |
+| oversight_visibility | 172 | 37% | 45% | -7.7 | -8.0 | 4 | 5.47 | 6.24 |  |
+| time_saved | 108 | 32% | 45% | -12.6 | -13.0 | 4 | 2.99 | 4.22 |  |
+| parent_community | 21 | 33% | 44% | -10.3 | -22.0 | 2 | 0.6 | 0.81 |  |
+| board_reporting | 16 | 31% | 44% | -12.3 | n/a | 1 | 0.43 | 0.64 | thin, single stratum |
 
 Source: ~/Documents/GTM Project/outputs/customer_truth/summary.json (stage 3), deals_tagged.jsonl (stage 2), deals_early_text.jsonl (stage 1); method in customer-truth/method.md
 
@@ -46,26 +47,18 @@ Quotes are picked one per deal, longest first, with at most two from the same ou
 
 Source: ~/Documents/GTM Project/outputs/customer_truth/summary.json (stage 3), deals_tagged.jsonl (stage 2), deals_early_text.jsonl (stage 1); method in customer-truth/method.md
 
-### student_engagement
-
-- "thinking about the issues that are going on with our year 11s at the moment, I think anything to do with Relationships and coercive control will give us a good gauge" (Catholic secondary, WA, won)
-- "The most significant student-facing issue is a "major problem" in Years 7 and 8, where students do not feel a sense of belonging or connection with their peers." (Independent secondary, SA, won)
-- "Teacher confidence - [name] said "in terms of the confidence piece I don't think we're there yet" and said if teachers had resources they could go back to during the week and deliver confidently that" (Unknown primary, QLD, lost)
-
-Source: ~/Documents/GTM Project/outputs/customer_truth/summary.json (stage 3), deals_tagged.jsonl (stage 2), deals_early_text.jsonl (stage 1); method in customer-truth/method.md
-
 ### pilot_trial_request
 
+- "[name] and I floated Wellio to the team yesterday in our team meeting and there was a lot of positive interest. If we are able to have a look at the trial version so we can make a presentation" (Unknown secondary, NSW North, won)
 - "we'll hold off on providing the data for now, as I understand this meeting is intended to go over the program with the Heads of House. Further meetings can be arranged once we have agreed" (Independent secondary, WA, won)
-- "Can you possibly give me and some of my staff another week to trial Wellio? We're in the midst of conversations about how to incorporate Wellio resources into our Mentor Program." (Unknown secondary, won)
 - "I believe I am may have received an email, on one of the attempts to contact me, offering free access to Wellio. Is this something I can have access to? I would like to explore the modules/content dur" (Independent secondary, ACT, lost)
 
 Source: ~/Documents/GTM Project/outputs/customer_truth/summary.json (stage 3), deals_tagged.jsonl (stage 2), deals_early_text.jsonl (stage 1); method in customer-truth/method.md
 
 ### time_saved
 
+- "A significant challenge is finding reliable, age-appropriate, and engaging resources. The current method involves searching YouTube and Google for 'random stuff,' which is time-consuming" (Unknown secondary, QLD, won)
 - "im not quite sure how she thinks she is going to incorporate it into the Tier 2...this would be a double up...creating more work for us… when we are trying to reduce our time!" (Government secondary, VIC, won)
-- "[name] expresses a desire for simplification and admits to being "very lazy," appreciating the idea of having scope and sequences built on their behalf" (Government secondary, NSW, won)
 - "The only challenges would probably be the time it takes to create new units. If staff had a large selection of resources that they then adapted to suit their class needs, this would be the missing lin" (Unknown primary, VIC, lost)
 
 Source: ~/Documents/GTM Project/outputs/customer_truth/summary.json (stage 3), deals_tagged.jsonl (stage 2), deals_early_text.jsonl (stage 1); method in customer-truth/method.md
@@ -78,36 +71,44 @@ Source: ~/Documents/GTM Project/outputs/customer_truth/summary.json (stage 3), d
 
 Source: ~/Documents/GTM Project/outputs/customer_truth/summary.json (stage 3), deals_tagged.jsonl (stage 2), deals_early_text.jsonl (stage 1); method in customer-truth/method.md
 
-### staff_wellbeing_retention
+### student_engagement
 
-- "Staff are overwhelmed and "sick of" constant student behavioral issues. They feel they are "just managing behavior" with no time to teach, leading them to feel defeated." (Government secondary, NSW, won)
-- "Teachers lack confidence and training to deliver wellbeing content effectively. They often feel they are being asked to act as counsellors or psychologists." (Government secondary, NSW, won)
-- "social emotional learning is helpful for the Emotional regulation staff. But they are mostly looking to build up staff tool kit to address outbursts of emotional disregulation." (Unknown primary, ACT, lost)
+- "Some activities feel disconnected from the learning objective. Example: throwing paper balls into a bin during a lesson, which students enjoyed but did not reinforce the concept meaningfully." (Unknown primary, SA, won)
+- "I would like for it to be a mini lesson, kinda what we talked about for our school, so that the students can then go off and conduct their own research after being inspired" (Unknown secondary, won)
+- "Teacher confidence - [name] said "in terms of the confidence piece I don't think we're there yet" and said if teachers had resources they could go back to during the week and deliver confidently that" (Unknown primary, QLD, lost)
 
 Source: ~/Documents/GTM Project/outputs/customer_truth/summary.json (stage 3), deals_tagged.jsonl (stage 2), deals_early_text.jsonl (stage 1); method in customer-truth/method.md
 
-### curriculum_mapped
+### oversight_visibility
 
-- "we would also be looking for content that is appropriate for our context - some may be more general and conservative in nature on some topics, while still being relevant, evidence-based and effective" (Independent secondary, SA, won)
-- "School teaches 'English for everything,' incorporating maths, science, health, and essential life skills, which poses challenges for broader curriculum integration." (Government secondary, WA, won)
-- "Must align with existing Respectful Relationships and SEL scope and sequence. Must allow the school to keep existing in-house lessons while also using Wellio lessons where useful." (Unknown primary, VIC, lost)
+- "I think the data stuff will be her priority, her highest interest point ... something for her to be able to track and see what it's doing and how it's benefiting our school community." (Unknown primary, SA, won)
+- "[name] confidence - she can't have eyes across how things are being delivered. Only approach is retaining 100% control, limits passing autonomy onto House Leaders" (Independent secondary, NSW, won)
+- "would you be able to provide us separate account/access per campus without affecting the total cost...each of our campuses be able to have access to their own teachers, students and student survey dat" (Unknown secondary, lost)
+
+Source: ~/Documents/GTM Project/outputs/customer_truth/summary.json (stage 3), deals_tagged.jsonl (stage 2), deals_early_text.jsonl (stage 1); method in customer-truth/method.md
+
+### timing_term
+
+- "On 12th August I will be going to a workshop with my Humanities Curriculum Leader. After that, I would like to introduce Curriculum Leaders and Pastoral Leaders to the Platform." (Catholic secondary, QLD, won)
+- "We have commenced holidays here already, so unfortunately some of our key staff are unavailable for the next three weeks and we may not be able to make a decision in this time." (Catholic secondary, QLD, won)
+- "We are moving to a new timetable structure for 2026 and a new PDHPE Syllabus for implementation in 2027. We would like to put further discussion on hold until these resources can fit our timetable" (Government secondary, NSW, lost)
 
 Source: ~/Documents/GTM Project/outputs/customer_truth/summary.json (stage 3), deals_tagged.jsonl (stage 2), deals_early_text.jsonl (stage 1); method in customer-truth/method.md
 
 ## What did not separate them
 
-compliance_requirement, staff_wellbeing_retention, pilot_trial_request, price_budget, curriculum_mapped, trackable_outcomes, evidence_based, timing_term, competitor_named, standardised_program
+pilot_trial_request, compliance_requirement, price_budget, staff_wellbeing_retention, trackable_outcomes, attendance_behaviour, evidence_based, curriculum_mapped, no_prep, standardised_program
 
 Source: ~/Documents/GTM Project/outputs/customer_truth/summary.json (stage 3), deals_tagged.jsonl (stage 2), deals_early_text.jsonl (stage 1); method in customer-truth/method.md
 
 ## Limits
 
-- Population: closed deals only; 704 of 704 had more than 200 characters of early text; 704 tagged; 0 tagging errors.
+- Population: closed deals only; 840 of 842 had more than 200 characters of early text; 842 tagged; 0 tagging errors.
 - Meeting outcomes are not recorded in HubSpot, so this reads what was written, not whether a meeting happened.
 - Loss-reason labels were not used (128 of 214 audited were wrong); the notes behind them were.
 - Retrospective tagging by a language model: quotes are verbatim, tags are judgement. Rerun quarterly from raw.
-- Conversation volume is a confound, not just tag presence: Win rate by early-text-length quartile (least to most text): 43%, 43%, 36%, 32%. Rates above are adjusted for this by stratifying on early-text length.
+- Conversation volume is a confound, not just tag presence: Win rate by early-text-length quartile (least to most text): 48%, 48%, 40%, 37%. Rates above are adjusted for this by stratifying on early-text length.
 - The tagging is retrospective: no message was ever stamped on a send, so this cannot be read as a controlled test of what to say.
-- Power: at the minimum sample of 20 present deals against the remaining 684 in-scope deals, a difference in win rate carries a roughly 95 percent margin of 22 points, and a tag needs about 110 present deals before that margin falls below the 10 point promotion threshold.
+- Power: at the minimum sample of 20 present deals against the remaining 822 in-scope deals, a difference in win rate carries a roughly 95 percent margin of 22 points, and a tag needs about 110 present deals before that margin falls below the 10 point promotion threshold.
 
 Source: ~/Documents/GTM Project/outputs/customer_truth/summary.json (stage 3), deals_tagged.jsonl (stage 2), deals_early_text.jsonl (stage 1); method in customer-truth/method.md
