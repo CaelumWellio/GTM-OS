@@ -30,6 +30,7 @@ Events of type email, meeting, note, call with a non-empty body and not an auto-
 - Quotes are verbatim, at most 200 characters, de-identified to school type and state in this repo.
 - Codebook version and model are recorded on every tagged row.
 - Rebuild from raw quarterly. Weekly runs append; they do not rewrite the truth file.
+- Quotes are scrubbed per deal, using that deal's own school names, staff names and email addresses. The automated check verifies full names and email addresses across the founder-facing files, but deliberately does not scan for single first names, because surnames collide with ordinary words. A name belonging to someone who is not a contact on that deal would not be caught mechanically and is a read-before-publish item.
 
 ## Known limits
 Meeting outcomes unrecorded (70 percent of past discovery meetings still SCHEDULED); a third of meetings untyped; call dispositions only from Feb 2026; loss labels unreliable (128 of 214 audited), notes used instead. Source: `~/Documents/GTM Project/docs/revops/2026-09-03-sdr-funnel-leak-analysis.md`.
