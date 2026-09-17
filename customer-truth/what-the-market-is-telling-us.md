@@ -1,10 +1,11 @@
 # What the market is telling us
 
-Generated 2026-09-17T06:20:49 UTC. Mode: cycle zero (retrospective). Codebook 1.0. Minimum sample 20.
+Generated 2026-09-17T06:49:25 UTC. Mode: cycle zero (retrospective). Codebook 1.0. Minimum sample 20.
 
 ## The answer in one paragraph
 
 Across 704 in-scope closed deals (271 won, 433 lost, base win rate 38%), no hook clears the bar of at least 20 mentions and a +10 point volume-adjusted difference. The strongest signal in the data is structural rather than verbal: won deals close in a median 29 days against 73 days for lost deals.
+One tag does anti-correlate strongly with winning: **time_saved** shows a volume-adjusted lift of -12.3 pts (n=95). The promotion rule above is one-sided by design (built to promote a hook, not to flag a warning), so this negative signal is reported here rather than promoted.
 
 Source: ~/Documents/GTM Project/outputs/customer_truth/summary.json (stage 3), deals_tagged.jsonl (stage 2), deals_early_text.jsonl (stage 1); method in customer-truth/method.md
 
@@ -16,26 +17,26 @@ Source: ~/Documents/GTM Project/outputs/customer_truth/summary.json (stage 3), d
 
 ## What separates winners from losers
 
-| Tag | Present n | Win rate present | Win rate absent | Raw lift | Adjusted lift | Share won % | Share lost % | Note |
-|---|---|---|---|---|---|---|---|---|
-| board_reporting | 15 | 33% | 39% | -5.3 | 37.9 | 0.56 | 0.62 | thin |
-| compliance_requirement | 38 | 42% | 38% | 3.8 | 4.6 | 1.78 | 1.37 |  |
-| staff_wellbeing_retention | 68 | 41% | 38% | 3.0 | 2.8 | 3.12 | 2.5 |  |
-| social_media_ban | 16 | 62% | 38% | 24.6 | 1.6 | 1.11 | 0.37 | thin |
-| pilot_trial_request | 260 | 39% | 38% | 0.6 | 1.0 | 11.26 | 9.92 |  |
-| price_budget | 257 | 39% | 38% | 0.0 | 0.3 | 11.04 | 9.86 |  |
-| curriculum_mapped | 173 | 38% | 39% | -1.2 | -1.7 | 7.25 | 6.74 |  |
-| trackable_outcomes | 206 | 36% | 40% | -3.6 | -3.9 | 8.25 | 8.23 |  |
-| evidence_based | 56 | 34% | 39% | -5.0 | -3.9 | 2.12 | 2.31 |  |
-| timing_term | 281 | 35% | 41% | -5.4 | -4.4 | 11.04 | 11.35 |  |
-| competitor_named | 147 | 35% | 39% | -3.9 | -4.5 | 5.8 | 5.93 |  |
-| standardised_program | 289 | 36% | 40% | -4.2 | -4.6 | 11.59 | 11.54 |  |
-| no_prep | 203 | 34% | 40% | -5.6 | -5.7 | 7.8 | 8.3 |  |
-| oversight_visibility | 152 | 34% | 40% | -5.5 | -6.0 | 5.8 | 6.24 |  |
-| attendance_behaviour | 52 | 33% | 39% | -6.3 | -6.4 | 1.9 | 2.18 |  |
-| student_engagement | 178 | 31% | 41% | -9.4 | -8.9 | 6.24 | 7.61 |  |
-| time_saved | 95 | 28% | 40% | -11.6 | -12.3 | 3.01 | 4.24 |  |
-| parent_community | 14 | 21% | 39% | -17.4 | -44.4 | 0.33 | 0.69 | thin |
+| Tag | Present n | Win rate present | Win rate absent | Raw lift | Adjusted lift | Strata | Share won % | Share lost % | Note |
+|---|---|---|---|---|---|---|---|---|---|
+| board_reporting | 15 | 33% | 39% | -5.3 | 37.9 | 1 | 0.56 | 0.62 | thin, single stratum |
+| compliance_requirement | 38 | 42% | 38% | 3.8 | 4.6 | 4 | 1.78 | 1.37 |  |
+| staff_wellbeing_retention | 68 | 41% | 38% | 3.0 | 2.8 | 4 | 3.12 | 2.5 |  |
+| social_media_ban | 16 | 62% | 38% | 24.6 | 1.6 | 1 | 1.11 | 0.37 | thin, single stratum |
+| pilot_trial_request | 260 | 39% | 38% | 0.6 | 1.0 | 4 | 11.26 | 9.92 |  |
+| price_budget | 257 | 39% | 38% | 0.0 | 0.3 | 4 | 11.04 | 9.86 |  |
+| curriculum_mapped | 173 | 38% | 39% | -1.2 | -1.7 | 4 | 7.25 | 6.74 |  |
+| trackable_outcomes | 206 | 36% | 40% | -3.6 | -3.9 | 4 | 8.25 | 8.23 |  |
+| evidence_based | 56 | 34% | 39% | -5.0 | -3.9 | 4 | 2.12 | 2.31 |  |
+| timing_term | 281 | 35% | 41% | -5.4 | -4.4 | 4 | 11.04 | 11.35 |  |
+| competitor_named | 147 | 35% | 39% | -3.9 | -4.5 | 4 | 5.8 | 5.93 |  |
+| standardised_program | 289 | 36% | 40% | -4.2 | -4.6 | 4 | 11.59 | 11.54 |  |
+| no_prep | 203 | 34% | 40% | -5.6 | -5.7 | 4 | 7.8 | 8.3 |  |
+| oversight_visibility | 152 | 34% | 40% | -5.5 | -6.0 | 4 | 5.8 | 6.24 |  |
+| attendance_behaviour | 52 | 33% | 39% | -6.3 | -6.4 | 4 | 1.9 | 2.18 |  |
+| student_engagement | 178 | 31% | 41% | -9.4 | -8.9 | 4 | 6.24 | 7.61 |  |
+| time_saved | 95 | 28% | 40% | -11.6 | -12.3 | 4 | 3.01 | 4.24 |  |
+| parent_community | 14 | 21% | 39% | -17.4 | -44.4 | 1 | 0.33 | 0.69 | thin, single stratum |
 
 Source: ~/Documents/GTM Project/outputs/customer_truth/summary.json (stage 3), deals_tagged.jsonl (stage 2), deals_early_text.jsonl (stage 1); method in customer-truth/method.md
 

@@ -37,4 +37,4 @@ Meeting outcomes unrecorded (70 percent of past discovery meetings still SCHEDUL
 
 ## Run log
 
-- 2026-09-17: cycle zero (retrospective); population {'deals': 704, 'won': 271, 'lost': 433, 'with_text': 704, 'tagged': 704, 'errors': 0, 'closed_total': 803, 'excluded_no_text': 99, 'excluded_no_text_won': 80}; base rate 0.3849; codebook 1.0; portal 20058914.
+- 2026-09-17: cycle zero (retrospective); population {'deals': 704, 'won': 271, 'lost': 433, 'with_text': 704, 'tagged': 704, 'errors': 0, 'closed_total': 803, 'excluded_no_text': 99, 'excluded_no_text_won': 80, 'excluded_error': 0}; base rate 0.3849; codebook 1.0; portal 20058914.
