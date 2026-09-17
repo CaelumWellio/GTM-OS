@@ -36,3 +36,5 @@ Events of type email, meeting, note, call with a non-empty body and not an auto-
 Meeting outcomes unrecorded (70 percent of past discovery meetings still SCHEDULED); a third of meetings untyped; call dispositions only from Feb 2026; loss labels unreliable (128 of 214 audited), notes used instead. Source: `~/Documents/GTM Project/docs/revops/2026-09-03-sdr-funnel-leak-analysis.md`.
 
 ## Run log
+
+- 2026-09-17: cycle zero (retrospective); population {'deals': 704, 'won': 271, 'lost': 433, 'with_text': 704, 'tagged': 704, 'errors': 0, 'closed_total': 803, 'excluded_no_text': 99, 'excluded_no_text_won': 80}; base rate 0.3849; codebook 1.0; portal 20058914.
