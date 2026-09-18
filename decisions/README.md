@@ -17,6 +17,10 @@ Date: 2026-09-18.
 
 Source: `outbound-engine/term-4-plan.md`; `README.md`; `results/README.md`.
 
+18 September 2026, message map. A founder persona read `outbound-engine/message-map.md` cold, alone, with five minutes. Passed the bar: named four things he would change that week, and could state what would falsify each of the three bets. He also found five weaknesses, all since fixed: the pivotal time-pressure figure was computed by hand rather than by the pipeline, the scepticism applied to the leadership number was not applied to the wellbeing one, the bets' drop conditions used words where they needed numbers, two of the three bets competed for the same list, and no figure anywhere said what a bet was worth. His verdict was that the view of what to say had arrived but the proof had not, since every bet depends on the send stamp landing first, and that the October and November outbound test should be handed over as an owned deliverable with thresholds agreed in advance.
+
+Source: the cold read transcript, held in the session record; `outbound-engine/message-map.md`.
+
 ## Pending from Caelum
 
 - The cost line for `README.md`. The front-door rewrite of 2026-09-18 was specified to end with one line stating the hours this work took. That figure has to come from Caelum and must not be estimated, so the line was left out of the page rather than filled with a guess. Add it to `README.md` once the number is known.
