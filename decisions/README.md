@@ -6,6 +6,17 @@ The reversal condition in `2026-09-16-first-machine.md` was met on 2026-09-17; t
 
 Cycle one reran the customer-truth pass on the full cache once the missing HubSpot scopes were granted; see `2026-09-17-cycle-one-full-cache.md`.
 
+## Cold read
+
+Date: 2026-09-18.
+
+- Comprehension bar passed. The reader could state the recommendation and the number without re-reading, and named a decision the plan changed for them.
+- The same read found the central fault: the do-nothing baseline was modelled from the sequence inventory's email cache rather than measured, and was wrong by roughly three times.
+- That is what prompted the correction of 18 September 2026, which rebased the number on meetings counted off the lead records and moved the commitment to the email-sourced portion.
+- Four wording faults were raised in the same read and fixed: unexplained jargon, a sequence named only by a raw id, a quantity left vague, and one sentence that could not be understood on three attempts.
+
+Source: `outbound-engine/term-4-plan.md`; `README.md`; `results/README.md`.
+
 ## Pending from Caelum
 
 - The cost line for `README.md`. The front-door rewrite of 2026-09-18 was specified to end with one line stating the hours this work took. That figure has to come from Caelum and must not be estimated, so the line was left out of the page rather than filled with a guess. Add it to `README.md` once the number is known.
