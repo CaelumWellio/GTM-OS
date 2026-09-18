@@ -6,6 +6,10 @@ The reversal condition in `2026-09-16-first-machine.md` was met on 2026-09-17; t
 
 Cycle one reran the customer-truth pass on the full cache once the missing HubSpot scopes were granted; see `2026-09-17-cycle-one-full-cache.md`.
 
+## Pending from Caelum
+
+- The cost line for `README.md`. The front-door rewrite of 2026-09-18 was specified to end with one line stating the hours this work took. That figure has to come from Caelum and must not be estimated, so the line was left out of the page rather than filled with a guess. Add it to `README.md` once the number is known.
+
 ## Pending questions (from the 2026-09-15 brainstorm)
 
 - Does primary attach travel with the role as ABM? Caelum.

@@ -1,35 +1,41 @@
 # Growth OS
 
-Growth OS is Wellio's marketing memory: one repo holding what the market has said, the machines that act on it, the job spec of every agent, and the results those machines have produced. It exists to close one loop, what goes out to the market comes back as a measured result and changes what goes out next.
+This is the case for how we should spend the next ninety days of outbound, and the evidence I am basing it on.
 
-## What has run
+## What I recommend
 
-Cycle one processed 844 closed AU new-business deals from the Sales Pipeline AU, rerun on 2026-09-17 after the HubSpot private app was granted the sales-email-read and crm.objects.contacts.read scopes and the 95 company timelines missing from the SDR-history cache were backfilled read-only. 842 of them are in scope, 99.8% coverage, up from 87.7% in cycle zero; the in-scope base win rate is 43% (365 won, 477 lost). Only 2 deals are still excluded, because their company has no file in the SDR-history cache.
+Back the Term 4 plan in `outbound-engine/term-4-plan.md`: 60 qualified meetings booked in the ninety days to mid-December, against 52 if we change nothing. It asks for three things. Move the send volume off the weakest large sequence and onto the hand-written shape the team already runs. Put a three-day clock on silence, but only for schools we contacted cold. And start recording, on every send, which angle it used, so that in ninety days we can answer the question this work could not.
 
-The weekly pull-and-tag job is installed, scheduled for Sunday 21:00, and now runs end to end. Its first digest, 2026-W38, is on branch `auto/weekly` for review.
+Be clear about where the 60 comes from. 52 of it is the run rate we would get anyway. The other 8 all come from the first move, and the plan calls that an assumption about where redirected volume goes, not a measurement. The honest range is 52 to 77. The second move adds no meetings at all, and the third adds none this term.
 
-Source: customer-truth/what-the-market-is-telling-us.md; agents/weekly-pull-and-tag.md
+Three things are needed from you. Edit rights on AU sequences in the production portal, which I do not have today. Sales Manager sign-off to pause a sequence a rep owns. And one decision: does it sit with marketing or with each rep to choose which schools get which sequence? The first move cannot start until that is answered. In exchange I hand my renewals book to the CS team in the first fortnight, keeping only the renewals already at quote stage. This analysis was done on top of a full book and that is not repeatable for ninety days.
 
-## The one finding
+Source: `outbound-engine/term-4-plan.md`.
 
-No hook in the cycle-one data clears the promotion bar, at least 20 mentions and a volume-adjusted difference of at least 10 points across at least two volume strata. Once conversation volume is controlled for, no wording separates the deals that won from the deals that lost. The strongest signal is structural rather than verbal: deals that won closed in a median 27 days, against 73 days for deals that lost, and win rate falls as the logged conversation grows (48%, 48%, 40%, 37% by early-text quartile). The most negative well-powered tag is time_saved, with a volume-adjusted difference of -13.0 points on 108 deals. The promotion rule only ever promotes a hook, it does not flag a warning, so this is reported rather than promoted; and with 18 tags tested it does not survive multiple-comparison correction, so it is a lead to check, not a finding. The nearest thing to a positive signal is social_media_ban, at n=19, one deal short of the minimum sample; it lines up with the Five Engines strategy's existing bet on the social media ban as a hook, and is worth testing deliberately.
+## What the evidence says
 
-Source: customer-truth/what-the-market-is-telling-us.md
+**Nothing we say predicts winning.** Across 842 closed AU deals, 365 won and 477 lost, no angle separates the deals we won from the deals we lost once we compare like with like. The evidence bar was set before the work ran, at a minimum of 20 deals mentioning an angle and a ten point difference in win rate. Nothing cleared it. The closest thing to a positive signal was the social media ban, which came up in 19 deals and needed 20 to count, so it is a lead worth testing, not a finding. Those 842 are 99.8 percent of the 844 closed deals in the window; the other 2 have no cached history to read.
+
+**How fast a school replies predicts a great deal.** A reply inside three days goes with a 46.9 percent win rate across 559 deals. Fifteen days or more goes with 16.3 percent across 49. But silence is only a warning sign for schools we contacted cold: of the 167 that never replied early, the 83 who arrived through Free Preview, Contact Sales, a principal conference or a diocese network won 51.8 percent, while the 84 from ordinary outbound won 36.9 percent against a 43.4 percent average. That split is read off campaign names, so a few deals sit on the wrong side of it.
+
+**Our sequences vary enormously, and the spread is not proof.** The largest by volume made 1,030 sends to 134 schools and produced 3 meetings and 1 win, while email written by hand to 244 schools produced 59 meetings and 13 wins. Two sequences are never a fair comparison: different lists, different months, different targeting, and a slow sequence looks far worse at fourteen days than at sixty. The inventory also only sees schools that already became leads, so every rate in it flatters us. That is the single largest reason the plan takes a third off its own arithmetic and signs up to the bottom of its range.
+
+Source: `customer-truth/what-the-market-is-telling-us.md`; `customer-truth/response-speed.md`; `outbound-engine/sequence-inventory.md`.
 
 ## Read next
 
-1. `results/README.md`: what has been built, and the baseline numbers behind it.
-2. `customer-truth/README.md`: what schools say when they buy, and the full finding.
-3. `decisions/README.md`: what has been decided, and what is still open.
+1. `outbound-engine/term-4-plan.md`: the plan, the arithmetic behind the 60, and what it does not claim.
+2. `results/README.md`: what the work found, what changed because of it, and the baseline numbers.
+3. `decisions/README.md`: what has been decided, and what is still waiting on someone.
 
-## The loop
+Source: the three files named above, all in this repo.
 
-Observe (weekly read-only pull), learn (tag and rank on a branch), decide (Caelum merges), act (stamped sequences and briefs), measure (scorecard), then back to observe.
+## What this is not
 
-Spec: `docs/superpowers/specs/2026-09-16-growth-os-design.md`.
+Running anything live before this decision was not permitted, so every number here is read off deals that already closed. That is why all of the work to date looks backwards, and why the plan is the forward half. These are associations, not proof.
 
-## What is not yet measured
+There is also no attribution. No message we have ever sent was recorded with the angle it used, so nothing here tells you what to say, only what happened. The third move exists to fix that.
 
-`results/metric-definitions.md` lists every metric this role would be measured on and whether it is measurable today. The gap that matters most is hook attribution: which hook a school responded to is not measurable, because no message has ever been stamped with a hook, persona or variant on send.
+The repo is built to close one loop: what goes out to the market comes back as a measured result and changes what goes out next. Only the measuring half of that loop exists today. The weekly job that reads HubSpot and writes the week up now runs end to end, and the first digest is waiting for review, so the reporting behind the plan is reporting that already exists rather than reporting I am promising to build.
 
-Source: results/metric-definitions.md
+Source: `outbound-engine/term-4-plan.md`; `results/metric-definitions.md`; `agents/weekly-pull-and-tag.md`.
