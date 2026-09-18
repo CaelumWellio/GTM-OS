@@ -1,46 +1,50 @@
-# What the outbound sequences did
+# What the AU outbound sequences did
 
-Generated 2026-09-17T23:59:31 UTC. 401 sequences, 62167 sequenced sends of 121473 outbound emails (51.2%).
+Generated 2026-09-18T00:18:08 UTC. 225 sequences, 12459 sequenced sends of 35055 outbound emails (35.5%), all within the AU scope described below.
 
 ## What this covers, and what it does not
 
-Only 51.2 percent of outbound emails carry a sequence id. The rest are written by hand, so this describes the sequenced part of outbound and nothing else. A school touched by several sequences is counted under each of them, so the columns add up to more than reality. A reply counts when it arrives within 14 days of the first send to that school, a meeting within 30 days, and a deal within 60 days. This is touch attribution, not proof that the sequence caused anything.
+Only 35.5 percent of outbound emails carry a sequence id. The rest are written by hand, so this describes the sequenced part of outbound and nothing else. A school touched by several sequences is counted under each of them, so the columns add up to more than reality. A reply counts when it arrives within 14 days of the first send to that school, a meeting within 30 days, and a deal within 60 days. This is touch attribution, not proof that the sequence caused anything.
+
+This inventory is scoped to AU. 1568 companies have a market of au, 936 have a different known market (chiefly UK, where outbound runs through Outreach, not HubSpot sequences), and 89 have no market recorded. Email rows outside the AU set were dropped before anything below was computed: 25691 had no company association at all, 20475 belonged to a company with a different market, and 75357 belonged to a company with no recorded market.
+
+Sequence names did not resolve on this run, so sequences below are identified only by their HubSpot id; look that id up inside HubSpot to find the sequence's name.
 
 Source: ~/Documents/GTM Project/outputs/growth_os/sequence_inventory.csv and sequence_inventory.json; computed from outputs/sdr_funnel/emails.jsonl, leads.jsonl and deals.jsonl
 
 ## The twenty largest sequences
 
-| Sequence | Sends | Schools | Reply rate | Meetings | Deals won | Note |
-|---|---|---|---|---|---|---|
-| 289426598 | 3011 | 346 | 22.0% | 29 | 12 |  |
-| 299760938 | 2997 | 391 | 4.1% | 3 | 1 |  |
-| 291806797 | 2199 | 183 | 27.3% | 4 | 3 |  |
-| 289837577 | 1465 | 245 | 10.2% | 0 | 0 |  |
-| 291376944 | 1401 | 384 | 30.5% | 38 | 7 |  |
-| 290173493 | 1378 | 246 | 14.2% | 2 | 0 |  |
-| 297987686 | 1368 | 61 | 11.5% | 1 | 0 |  |
-| 304469789 | 1221 | 145 | 4.8% | 0 | 0 |  |
-| 297983746 | 1219 | 65 | 12.3% | 5 | 0 |  |
-| 301410336 | 1142 | 115 | 7.0% | 0 | 0 |  |
-| 301410404 | 1100 | 61 | 13.1% | 3 | 1 |  |
-| 290985046 | 1061 | 177 | 23.7% | 10 | 12 |  |
-| 307913077 | 935 | 268 | 14.9% | 18 | 1 |  |
-| 289256817 | 872 | 167 | 15.0% | 4 | 0 |  |
-| 301923703 | 850 | 171 | 7.0% | 0 | 0 |  |
-| 305649432 | 755 | 151 | 15.2% | 5 | 4 |  |
-| 289345876 | 705 | 134 | 17.9% | 0 | 0 |  |
-| 305407405 | 682 | 75 | 36.0% | 0 | 0 |  |
-| 302965641 | 673 | 83 | 13.2% | 0 | 0 |  |
-| 305328401 | 663 | 51 | 17.6% | 0 | 0 |  |
-| everything else, 381 sequences | 36470 | 9961 | 29.7% | 512 | 154 | |
+| Sequence | Sends | Schools | Reply rate (14d) | Reply rate (60d) | Meetings | Deals won | Note |
+|---|---|---|---|---|---|---|---|
+| 299760938 | 1030 | 134 | 6.7% | 23.1% | 3 | 1 |  |
+| 289426598 | 1007 | 110 | 27.3% | 63.6% | 29 | 12 |  |
+| 291806797 | 816 | 55 | 34.5% | 56.4% | 4 | 3 |  |
+| 290985046 | 459 | 67 | 32.8% | 55.2% | 10 | 11 |  |
+| 285582734 | 354 | 44 | 54.5% | 65.9% | 9 | 5 |  |
+| 309028247 | 352 | 34 | 20.6% | 29.4% | 3 | 0 |  |
+| 307913077 | 345 | 109 | 22.0% | 32.1% | 18 | 1 |  |
+| 304709532 | 324 | 112 | 21.4% | 37.5% | 21 | 0 |  |
+| 300679565 | 278 | 150 | 46.0% | 80.7% | 0 | 0 |  |
+| 298986013 | 243 | 97 | 29.9% | 46.4% | 24 | 2 |  |
+| 291376944 | 223 | 71 | 45.1% | 66.2% | 38 | 7 |  |
+| 306127916 | 207 | 48 | 8.3% | 12.5% | 0 | 0 |  |
+| 306976000 | 200 | 71 | 22.5% | 31.0% | 2 | 0 |  |
+| 273996434 | 184 | 80 | 56.2% | 75.0% | 40 | 9 |  |
+| 281340465 | 181 | 44 | 27.3% | 47.7% | 10 | 3 |  |
+| 290240094 | 144 | 48 | 35.4% | 64.6% | 21 | 6 |  |
+| 274749313 | 136 | 57 | 38.6% | 59.7% | 11 | 7 |  |
+| 284064136 | 125 | 32 | 50.0% | 71.9% | 16 | 6 |  |
+| 289256817 | 122 | 22 | 13.6% | 36.4% | 4 | 0 |  |
+| 283130368 | 114 | 39 | 35.9% | 69.2% | 17 | 6 |  |
+| everything else, 205 sequences | 5615 | 2258 | 35.3% | 57.8% | 295 | 108 | |
 
 Source: ~/Documents/GTM Project/outputs/growth_os/sequence_inventory.csv and sequence_inventory.json; computed from outputs/sdr_funnel/emails.jsonl, leads.jsonl and deals.jsonl
 
 ## Against the schools we emailed without a sequence
 
-| Group | Schools | Reply rate | Meetings | Deals won |
-|---|---|---|---|---|
-| no sequence, written by hand | 1356 | 32.2% | 126 | 11 |
+| Group | Schools | Reply rate (14d) | Reply rate (60d) | Meetings | Deals won |
+|---|---|---|---|---|---|
+| no sequence, written by hand | 244 | 41.4% | 62.7% | 59 | 13 |
 
 Source: ~/Documents/GTM Project/outputs/growth_os/sequence_inventory.csv and sequence_inventory.json; computed from outputs/sdr_funnel/emails.jsonl, leads.jsonl and deals.jsonl
 
@@ -50,5 +54,7 @@ Source: ~/Documents/GTM Project/outputs/growth_os/sequence_inventory.csv and seq
 - Performance is reported by sequence, never by the person who sent it.
 - Replies by phone or in person are invisible here.
 - The windows above are choices, not facts; a different window would move the numbers.
+- Reply rate depends heavily on the window chosen: sequence 299760938 replies at 6.7% within 14 days but 23.1% within 60 days, the same underlying behaviour measured differently. A slow-cadence sequence can look ten times worse than it is if the window is too short.
+- 34.9% of incoming emails and 7.1% of outgoing emails in the underlying cache carry no company association at all and are invisible to every reply rate here; every reply rate in this file is a floor, not a true rate.
 
 Source: ~/Documents/GTM Project/outputs/growth_os/sequence_inventory.csv and sequence_inventory.json; computed from outputs/sdr_funnel/emails.jsonl, leads.jsonl and deals.jsonl
