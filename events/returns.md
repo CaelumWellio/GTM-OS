@@ -2,6 +2,8 @@
 
 Generated 2026-09-18T06:24:21 UTC. 12 of 151 events have a matched campaign, together 182 deals and 74 wins worth $525,439.
 
+These two systems have never been joined before. The workbook records what we planned and what we believed each event produced; HubSpot records the deals. Nobody has ever read one against the other, so where the two disagree below, it is not that anyone recorded something carelessly. It is that the same conference is entered three different ways and no join existed to catch it. That is the gap this page closes.
+
 ## What this can and cannot see
 
 Every figure comes from the Australian sales pipeline, which is the only one cached here, so UK and international events appear in the catalogue and cannot be measured at all. A campaign is an assignment made when the deal was created, not proof the event caused it. Costs are the planned 2026 figures from the workbook while returns span 2025 and 2026, and amounts are recorded deal values rather than recognised revenue.
@@ -28,6 +30,8 @@ Source: `events/data/events.csv` and `events/data/campaign-aliases.csv`; joined 
 Source: `events/data/events.csv` and `events/data/campaign-aliases.csv`; joined to ~/Documents/GTM Project/outputs/sdr_funnel/deals.jsonl and leads.jsonl; workbook snapshot in outputs/growth_os/
 
 ## Where the sheet and HubSpot disagree
+
+Read this as a list of naming problems, not a scorecard. The workbook's performance column was filled in from what was known at the time, without a reliable way to check it against the pipeline, and no such way existed until now. Nine events differ, and across them the column reads about 24 wins high. Three of the nine differ by one, which is a rounding-level disagreement. The two that matter are the events claiming deals that have no campaign behind them at all, because there is nothing there to check the claim against.
 
 | Event | Sheet claims | HubSpot wins | Difference |
 |---|---|---|---|
